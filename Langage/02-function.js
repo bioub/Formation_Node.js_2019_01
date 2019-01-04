@@ -1,5 +1,6 @@
 'use strict';
 
+// Default Param (ES6/ES2015)
 function hello(name = 'Romain') {
   return 'Hello ' + name;
 }

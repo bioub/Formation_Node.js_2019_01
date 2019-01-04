@@ -16,12 +16,21 @@ for (let i = 0; i < nbs.length; i++) {
 // des fonctions remplacent des algo
 nbs
   .filter((nb) => nb % 2 === 1)
+  .filter(function(nb) { return nb % 2 === 1 })
   .forEach((nb) => console.log(nb));
 
-
+console.log('FIN');
 // pile d'appels
 // ^               log  log
 // |=> - => - =>   => - =>
-// |filter       - forEach
-// +-----------------------> temps
-//                 3    5
+// |filter       - forEach   log
+// +------------------------------> temps
+//                 3    5    FIN
+
+
+// faire la somme de tous les éléments avec reduce
+// acc: 0, elt: 3 => 3
+// acc: 3, elt: 4 => 7
+// acc: 7, elt: 5 => 12 (résultat final)
+const sum = nbs.reduce((acc, nb) => acc + nb, 0);
+console.log(`La somme du tableau [${nbs}] est ${sum}`);
