@@ -1,3 +1,5 @@
+'use strict';
+
 var a = 'a';
 function externe() {
   // portée de closure

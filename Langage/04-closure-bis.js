@@ -1,3 +1,5 @@
+'use strict';
+
 function externe() {
   // portée de closure est également
   // sauvergardé si l'exécution d'externe

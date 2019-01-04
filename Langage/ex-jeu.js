@@ -1,3 +1,5 @@
+'use strict';
+
 // import de fichier (importe l'API readline)
 // qui vient du fichier readline (dans le binaire de Node)
 const readline = require('readline');

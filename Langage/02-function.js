@@ -1,3 +1,5 @@
+'use strict';
+
 function hello(name = 'Romain') {
   return 'Hello ' + name;
 }

@@ -1,3 +1,5 @@
+'use strict';
+
 setTimeout(() => console.log('A'), 1000);
 setTimeout(() => console.log('B'), 0);
 setTimeout(() => console.log('C'), 1000);

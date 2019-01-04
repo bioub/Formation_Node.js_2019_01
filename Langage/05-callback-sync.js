@@ -1,3 +1,5 @@
+'use strict';
+
 const nbs = [3, 4, 5];
 
 // programmation impérative
