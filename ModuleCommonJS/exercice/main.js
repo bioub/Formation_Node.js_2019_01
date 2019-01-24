@@ -1,5 +1,6 @@
 'use strict';
 
+const jouer = require('./jouer');
 // ici on démarre le programme
 // exercice : importer jouer
 

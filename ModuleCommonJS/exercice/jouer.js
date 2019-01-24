@@ -8,6 +8,8 @@
 // import de fichier (importe l'API readline)
 // qui vient du fichier readline (dans le binaire de Node)
 const readline = require('readline');
+const chalk = require('chalk');
+const random = require('./random');
 
 // configuration de readline
 // ici on lit la ligne sur le clavier (process.stdin)
@@ -17,7 +19,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-const entierAlea = randomInt(100);
+const entierAlea = random.randomInt(100);
 const essais = [];
 
 // pose une question
@@ -27,7 +29,7 @@ function jouer() {
     console.log('Vous avez déjà joué : ' + essais.join(' - '));
   }
 
-  rl.question('Quel est le nombre ? ', (answer) => {
+  rl.question(chalk.blue('Quel est le nombre ? '), (answer) => {
     
     const entierSaisi = parseInt(answer);
 
@@ -52,3 +54,5 @@ function jouer() {
     rl.close();
   });
 }
+
+module.exports = jouer;

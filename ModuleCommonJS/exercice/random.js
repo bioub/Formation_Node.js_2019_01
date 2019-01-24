@@ -11,3 +11,6 @@ function random(max) {
 function randomInt(max) {
   return Math.floor(random(max) + 1);
 }
+
+exports.random = random;
+exports.randomInt = randomInt;
