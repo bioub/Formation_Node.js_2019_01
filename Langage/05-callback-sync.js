@@ -16,7 +16,7 @@ for (let i = 0; i < nbs.length; i++) {
 // des fonctions remplacent des algo
 nbs
   .filter((nb) => nb % 2 === 1)
-  .filter(function(nb) { return nb % 2 === 1 })
+  // .filter(function(nb) { return nb % 2 === 1 })
   .forEach((nb) => console.log(nb));
 
 console.log('FIN');

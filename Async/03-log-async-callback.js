@@ -18,7 +18,7 @@ log(logFilePath, 'Ligne 1', (err) => {
     if (err) {
       return console.log('Erreur du filesystem, est-ce que le dossier logs existe ?');
     }
-    log(logFilePath, 'Ligne 3', () => {
+    log(logFilePath, 'Ligne 3', (err) => {
       if (err) {
         return console.log('Erreur du filesystem, est-ce que le dossier logs existe ?');
       }

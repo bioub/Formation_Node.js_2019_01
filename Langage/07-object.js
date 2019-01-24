@@ -2,7 +2,8 @@
 
 // 1/ object literal
 // - si l'objet est simple à créer
-// - si l'objet contient des méthodes mais est unique (ex: Math)
+// - s'il y a des méthodes ne pas le créer plusieurs fois (sinon la fonction
+// sera dupliquée)
 const coords = {
   x: 10,
   y: 20,
@@ -60,7 +61,6 @@ console.log(jean.hello());
 class Voiture {
   constructor(marque) {
     this.marque = marque;
-    this.prix = 0;
   }
   infos() {
     return 'Marque : ' + this.marque;

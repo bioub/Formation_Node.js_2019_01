@@ -9,7 +9,7 @@ console.log('E');
 // pile d'appels
 // ^
 // |                             log      log       log log
-// |st - st - st - st - log .... =>  .... =>  ..... =>  =>
+// |st - st - st - st - log .... =>  .... =>  ..... =>  => 
 // 0-----0,5ms----------2ms------2,5ms----501ms-----1s----> temps
 //                      E        B        D         A   C
 

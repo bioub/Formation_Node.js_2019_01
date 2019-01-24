@@ -3,7 +3,7 @@
 console.log('Hello');
 
 /**
- * Additionne 2 nombres
+ * Additionne 2 nombres (usejsdoc.org)
  * @param {number} a Le premier nombre
  * @param {number} b Le deuxième nombre
  * @returns {number} La somme

@@ -25,7 +25,7 @@ function jouer() {
 
     if (isNaN(entierSaisi)) {
       console.log('Erreur : il faut saisir un nombre');
-      return jouer();
+     return jouer();
     }
 
     essais.push(entierSaisi);
