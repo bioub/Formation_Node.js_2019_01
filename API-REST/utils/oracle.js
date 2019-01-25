@@ -1,7 +1,7 @@
 const oracledb = require('oracledb');
 const dbConfig = { user: 'STORELAND', password: 'STORELAND', connectString: '10.59.10.21:1521/STOR' };
 
-async function initOracleConnPool() {
+async function initPool() {
 
   oracledb.autoCommit = true;
   try {
@@ -53,5 +53,5 @@ async function closePoolAndExit() {
   }
 }
 
-exports.initOracleConnPool = initOracleConnPool;
+exports.initPool = initPool;
 exports.closePoolAndExit = closePoolAndExit;
