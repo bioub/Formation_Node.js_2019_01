@@ -1,5 +1,13 @@
 {
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "oracledb": "^3.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
   }
 }

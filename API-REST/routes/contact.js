@@ -18,10 +18,20 @@ const contacts = [{
   id: 22,
 }];
 
+// Lister des contacts
 routes.get('/', (req, res) => {
   res.json(contacts);
 });
 
+// Ajouter un contact
+// express.json() remplaçant de body-parser
+routes.post('/', express.json(), (req, res) => {
+  const contact = req.body;
+  contact.id = Math.floor(Math.random() * 10001);
+  res.json(contact);
+});
+
+// Afficher le détail d'un contact
 routes.get('/:id', (req, res) => {
   const id = Number(req.params.id);
   const contact = contacts.find((c) => c.id === id);

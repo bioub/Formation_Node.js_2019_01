@@ -1,6 +1,10 @@
 const express = require('express');
 const routesContact = require('./routes/contact');
 const routesMagasin = require('./routes/magasin');
+const oracle = require('./utils/oracle');
+
+// Démarre le pool de connection Oracle
+oracle.initOracleConnPool();
 
 const app = express();
 
