@@ -9,8 +9,17 @@ routes.get('/', async (req, res) => {
   res.json(magasins);
 });
 
-routes.get('/:id', (req, res) => {
-  res.json({});
+routes.get('/:id', async (req, res) => {
+  const id = req.params.id;
+
+  const magasin = await model.getMagasinByCodeMagasin(id);
+
+  if (!magasin) {
+    res.statusCode = 404;
+    res.json({err: 'Pas de magasin'});
+  }
+
+  res.json(magasin);
 });
 
 module.exports = routes;

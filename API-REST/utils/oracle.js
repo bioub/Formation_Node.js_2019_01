@@ -33,8 +33,6 @@ async function initPool() {
 
   } catch (err) {
     console.error('init() error: ' + err.message);
-  } finally {
-    await closePoolAndExit();
   }
 }
 
