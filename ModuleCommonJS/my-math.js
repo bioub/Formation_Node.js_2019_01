@@ -1,5 +1,7 @@
 
 // (function (exports, require, module, __filename, __dirname) { 
+'use strict';
+  
 /**
  * Additionne 2 nombres (usejsdoc.org)
  * @param {number} a Le premier nombre

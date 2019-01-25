@@ -1,3 +1,5 @@
+'use strict';
+
 // Node.js créé automatiquement une fonction autour de chaque fichier
 // donc les variables ou fonctions créé sont locales au fichier
 // on appelle celà un module JavaScript

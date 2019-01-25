@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "Web"
+		},
+		{
+			"path": "ModuleCommonJS"
+		},
+		{
+			"path": "Async"
+		},
+		{
+			"path": "Langage"
+		},
+		{
+			"path": "API-REST"
+		}
+	]
+}
